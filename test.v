@@ -42,6 +42,9 @@ module test;
         // Turn on switch 0
         sw[0] = 1;
 
+        // Wait 20 ns
+        #20
+
         // Make sure LED 0 is on
         if (led[0] != 1) begin
             $display("Test failed!");
